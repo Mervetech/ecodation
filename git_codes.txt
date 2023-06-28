@@ -36,3 +36,18 @@ git checkout commitID
 git stash list
 git stash pop
 git stash drop stash@{0} diyelim ki silmek istedik bunu yazarız
+
+
+git branch -M main
+git branch -v
+git branch backend
+git branch
+NOT: branch öncesinde git add, commmit, push yapalım
+git branch backend
+git checkout backend
+git checkout main
+git branch -a
+git branch -D backend
+
+
+>>>>>>> frontend
