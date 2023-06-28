@@ -27,3 +27,12 @@ git log
 git checkout commitID
  git clone URL
  git pull  
+
+
+
+
+ git stash 
+ git stash save "benim_stash"  // ya üstteki gibi yazılır yada bu satırdaki gibi ama genelde üsttedeki gibi yazılır//
+git stash list
+git stash pop
+git stash drop stash@{0} diyelim ki silmek istedik bunu yazarız
