@@ -7,6 +7,9 @@ Version : v.1
 
 /*#######################################################*/
 /* Root -kök*/
+:root{
+    --templateBgColor:rgb(44, 45, 46);
+}
 
 /*#######################################################*/
 /* Common Property-ortak mülkiyet */
@@ -90,6 +93,11 @@ i{
 }
 
 /*#######################################################*/
+/*Navbar*/
+.dark_mode{
+background-color: var(--templateBgColor);
+}
+
 /*Header*/
 header{
     background-image: url(./img/indir.jpg);
