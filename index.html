@@ -26,6 +26,9 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
   <!-- external Css -->
   <link rel="stylesheet" href="style.css">
@@ -56,28 +59,25 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+              <i class="fa-regular fa-user text-primary"></i>
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Login</a></li>
+              <li><a class="dropdown-item" href="#">Register</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-          </li>
-        </ul>
+                  </ul>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <button class="btn btn-primary" onclick="darkModu()">Dark</button>
+            <button class="btn btn-primary" onclick="darkModu()"><i class="fa-sharp fa-solid fa-moon"></i></button>
           </li>
         </ul>
+
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Arama için ..." aria-label="Search">
+          <input id="tags" class="form-control me-2" type="search" placeholder="Arama için ..." aria-label="Search">
           <button class="btn btn-primary " type="submit">Ara</button> <!-- btn-outline-success -->
         </form>
       </div>
@@ -89,30 +89,42 @@
   <!-- start header codes -->
   <header id="header_id">
     <!-- div.text-white>div.container>div.p-5.text-uppercase.display-4{Frontend Eğitimimize Hoşgeldiniz}+h4{Html5 Css3 JS React}+a.btn.btn-primary+a.btn.btn-danger+a.btn.btn-success  -->
-        <div class="text-white">
-          <div class="container text-center">
-            <div class="p-5 text-uppercase display-4">Frontend Eğitimimize Hoşgeldiniz</div>
-            <h4>Html5 Css3 JS React</h4>
-            <a href="" class="btn btn-primary">Linkedin</a>
-            <a href="" class="btn btn-danger">Blog</a>
-            <a href="" class="btn btn-success">Youtube</a>
-          </div>
-        </div>   
+    <div class="text-white">
+      <div class="container text-center">
+        <div class="p-5 text-uppercase display-4">Frontend Eğitimimize Hoşgeldiniz</div>
+        <h4>Html5 Css3 JS React</h4>
+        <a href="" class="btn btn-primary">Linkedin</a>
+        <a href="" class="btn btn-danger">Blog</a>
+        <a href="" class="btn btn-success">Youtube</a>
+      </div>
+    </div>
 
   </header>
   <!-- end header codes -->
 
   <!-- start main codes -->
   <main id="main_id">
-   
-      
-  </main>
+ <section>
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, accusantium? Porro eaque placeat beatae sit illo? Repellendus ratione aliquid maxime officiis earum. Fugiat labore aliquam officia unde beatae, excepturi voluptatibus.
+Ea, ipsum? Laborum, dignissimos doloremque maxime eveniet sapiente perspiciatis quia ipsam autem ratione harum, repellendus cum, ipsa excepturi expedita! Eaque, maiores sunt magnam iusto illo incidunt quae quisquam magni doloremque.
+Unde facilis nulla distinctio facere enim laborum molestias architecto maiores, repellat nemo temporibus magnam accusantium ducimus laboriosam explicabo beatae repudiandae asperiores, aperiam dolores? Voluptas quibusdam, debitis eveniet ipsam voluptatibus nisi?
+At, asperiores. Aspernatur, nulla? Dolores maxime totam magni consectetur, iusto itaque nisi eius cumque facilis! Impedit, ea alias neque sapiente quae sit. Alias assumenda ad sunt ea reprehenderit odit cumque.
+Dolores consequuntur ipsam quae asperiores molestiae quam quas illo neque voluptas esse animi vel fugiat, consectetur earum nemo deserunt voluptatem dicta magnam tempore similique cum aliquam velit. Voluptate, sapiente tempore!
+Praesentium doloribus rem pariatur ipsum laborum necessitatibus quam, dolores dolor magni amet dicta sit odit suscipit possimus neque voluptates explicabo quae eos officia ipsa quis? Minima repudiandae necessitatibus debitis quia?
+Aspernatur cupiditate praesentium quis amet aut. Fugit unde maxime velit odit earum fuga facilis quasi aut in error porro aliquid voluptate asperiores dolor eveniet repudiandae quibusdam, quae sapiente deleniti quo?
+Ratione sunt sed beatae tempore esse consequuntur porro ab voluptate aspernatur, cum minima harum quae quasi eos libero veniam ipsam asperiores cumque magnam! Magnam laboriosam accusamus, amet unde delectus placeat.
+ </section>
+   </main>
   <!-- end main codes -->
 
   <!-- start codes -->
-  <footer id="footer_id"></footer>
-  <!-- end codes -->
-
+  <footer id="footer_id" class="bg-dark">
+    
+   <div class="text-center p-5" id="copy_right">2021- <span id="date_id"></span> &copy; Bütün Haklar Saklıdır</div>
+  
+  </footer>
+  <!-- end footer codes -->
+ 
   <!-- end codes -->
 
 

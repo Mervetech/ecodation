@@ -96,6 +96,8 @@ i{
 /*Navbar*/
 .dark_mode{
 background-color: var(--templateBgColor);
+color: #ffff;
+
 }
 
 /*Header*/
@@ -107,4 +109,11 @@ header{
     z-index: -1;
     height: 80vh;
     padding-top: 4rem;
+}
+
+/*Footer*/
+footer{
+    min-height: 10 rem;
+    width: auto;
+    color: white; 
 }
