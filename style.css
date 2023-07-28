@@ -55,6 +55,16 @@ i{
     clear: both;
  }
 
+ .myHeading{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    text-shadow: 0.4px -0.9px rgba(0, 0, 0, 0.9);
+    opacity: 0.8;
+    
+ }
+
    /* my special size */
 .fSize1{
     font-size: 1rem;  /*  20*1  */
@@ -71,6 +81,14 @@ i{
     font-size: 4rem;  /*  20*4  */
 }
  /* Line-clamp */
+
+ .line-clamp4{
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}
+
 .line-clamp5{
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
@@ -110,6 +128,18 @@ header{
     height: 80vh;
     padding-top: 4rem;
 }
+
+/*Main*/
+#messages{
+ margin-top: 3rem ;
+ margin-bottom: 3rem ;
+ }
+ 
+ #messages i{
+    color: blue;
+    font-size: 5rem;
+
+ }
 
 /*Footer*/
 footer{
