@@ -48,6 +48,12 @@ img:hover{
 i{
   font-size: 1.5rem;  /* html e göre 1.5*20 demektir */ 
 }
+
+p{
+    color: black!important;
+}
+
+
 /*#######################################################*/
  .my_clearfix::after{
     content: "";
@@ -142,6 +148,10 @@ header{
  margin-bottom: 3rem ;
  }
  
+#messages > .container> .row>.text-center>p{
+    color: black!important;
+}
+
  #messages i{
     color: blue;
     font-size: 5rem;
@@ -157,11 +167,30 @@ header{
     padding: 2rem;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    
  }
 
  #parallax h2,p{
-    color: rgb(255, 255, 255);
+    color: white!important;
  }
+
+
+ /*newspaper*/
+#newspaper  {
+ height: 35rem;
+ padding: 2rem;;
+}
+#newspaper  p{
+    color: black!important;
+    text-align: justify;
+    }
+ 
+    
+ /* blog */
+#blog{
+background-color: rgb(180, 159, 199);
+}
+
 
 
 /*Footer*/
