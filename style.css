@@ -104,7 +104,14 @@ i{
 }
 
 .line-clamp10{
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}
+
+.line-clamp20{
+    -webkit-line-clamp: 20;
     -webkit-box-orient: vertical;
     display: -webkit-box;
     overflow: hidden;
@@ -129,7 +136,7 @@ header{
     padding-top: 4rem;
 }
 
-/*Main*/
+/*Messages*/
 #messages{
  margin-top: 3rem ;
  margin-bottom: 3rem ;
@@ -140,6 +147,22 @@ header{
     font-size: 5rem;
 
  }
+
+ /*Parallax*/
+ #parallax{
+    background-color: transparent;
+    background-image: url('./img/header.jpeg');
+    background-size: cover;
+    height: 35rem;
+    padding: 2rem;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+ }
+
+ #parallax h2,p{
+    color: rgb(255, 255, 255);
+ }
+
 
 /*Footer*/
 footer{
