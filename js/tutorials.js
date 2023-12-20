@@ -102,6 +102,7 @@ var result2; */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Math
+/*
 console.log(Math.PI);
 console.log(Math.E);
 console.log(Math.min(4,1,99,555,25,-100));
@@ -118,4 +119,57 @@ console.log(Math.round(6.5)); // 6.5 ve yukarı olanları yukarı yuvarlar
 
 console.log(Math.sin(45));
 
-console.log(Math.round(Math.random()*9+1));
+console.log(Math.round(Math.random()*9+1)); */
+
+//Number
+var sayi=15000;
+console.log(sayi);
+
+var sayi2=1.5E+4;
+console.log(sayi2);
+
+//binary,octal,decimal, hexdecimal nedir?
+
+//binary : 0-1
+var binary=0b00011;
+console.log(binary);
+
+//octal: 0-1-2-3-4-5-6-7 
+var octal=0o7512;
+console.log(octal);
+
+//decimal: 0-1-2-3-4-5-6-7-8-9 
+var decimal=123456;
+console.log(decimal);
+
+//hexadecimal: 0-1-2-3-4-5-6-7-8-9-A-B-C-D-E-F
+var hexadecimal=0xff;
+console.log(hexadecimal);
+
+//Number() parseInt()=bu int çeviriyor arasındaki fark nedir?
+//string() data.toString nedir aralarındaki farlkar nedir?
+//Cast
+//database, port, api(string)
+console.log(Number("10")+10);
+console.log(parseInt("10")+10);
+
+console.log(String(30)+10);
+ var number=30;
+ console.log(number.toString()+10);
+
+
+
+
+
+
+
+
+
+
+
+
+// console.log(Math.abs(-5.9));
+// console.log(Math.round(5.9));
+// console.log(Math.pow(6,2));
+// console.log(Math.ceil(5.9));
+// console.log(6/5);
