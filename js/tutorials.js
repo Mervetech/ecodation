@@ -180,25 +180,68 @@ console.log(Math.round(Math.random()*9+1)); */
 // data5=76;
 // console.log(data5);
 ///////////////////////////////
-//string
-let str=' js ÖĞreniyorum js '
-console.log(str);
-console.log(str.length);
-console.log(str.trim().length);
+// //string
+// let str=' js ÖĞreniyorum js '
+// console.log(str);
+// console.log(str.length);
+// console.log(str.trim().length);
 
-console.log(str.toLowerCase());
-console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+// console.log(str.toUpperCase());
 
-console.log(str.charAt(1)); //1.data daki karakteri gösterir
+// console.log(str.charAt(1)); //1.data daki karakteri gösterir
 
-console.log(str.indexOf("js")); //soldan arama yaparken nerede buluğunu yazar
-console.log(str.lastIndexOf("js")); //sondan aramaya başlıyor
+// console.log(str.indexOf("js")); //soldan arama yaparken nerede buluğunu yazar
+// console.log(str.lastIndexOf("js")); //sondan aramaya başlıyor
 
-console.log(str.concat("sona ekleme"));
-console.log(str.replace(str,"değiştir")); //yazıyı satırdaki ile değişiyor
+// console.log(str.concat("sona ekleme"));
+// console.log(str.replace(str,"değiştir")); //yazıyı satırdaki ile değişiyor
 
-console.log(str.substring(2));  //2.indisten itibaren parçala bana göster
-console.log(str.substring(0,4)); // bana 2 ile 4 arasında parçala göster
+// console.log(str.substring(2));  //2.indisten itibaren parçala bana göster
+// console.log(str.substring(0,4)); // bana 2 ile 4 arasında parçala göster
+// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Function (Normal Fonksiyon)
+
+//1 retursuz Parametresiz
+function returnsuzParametresiz(){
+    console.log("deneme");
+}
+returnsuzParametresiz();
+
+//2 retursuz Parametreli
+function returnsuzParametreli(adi){//parametre:adi
+    console.log("deneme "+adi);
+}
+returnsuzParametreli("merve"); //argüman: "merve "
+
+
+//3 returlu Parametresiz
+function returnluParametresiz(){
+    return "deneme55";
+}
+let result3=returnluParametresiz();
+console.log(result3);
+
+//4 returlu Parametreli
+function returnluParametreli(soyadi){
+    return "deneme66 "+soyadi;
+}
+let result4=returnluParametreli("Turhan");
+console.log(result4);
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Anoymous (function)
+
+
+//Arrow (Function)
+
+
+
+
+
+
+
+
 
 // console.log(Math.abs(-5.9));
 // console.log(Math.round(5.9));
