@@ -122,74 +122,83 @@ console.log(Math.sin(45));
 console.log(Math.round(Math.random()*9+1)); */
 
 //Number
-var sayi=15000;
-console.log(sayi);
+// var sayi=15000;
+// console.log(sayi);
 
-var sayi2=1.5E+4;
-console.log(sayi2);
+// var sayi2=1.5E+4;
+// console.log(sayi2);
 
-//binary,octal,decimal, hexdecimal nedir?
+// //binary,octal,decimal, hexdecimal nedir?
 
-//binary : 0-1
-var binary=0b00011;
-console.log(binary);
+// //binary : 0-1
+// var binary=0b00011;
+// console.log(binary);
 
-//octal: 0-1-2-3-4-5-6-7 
-var octal=0o7512;
-console.log(octal);
+// //octal: 0-1-2-3-4-5-6-7 
+// var octal=0o7512;
+// console.log(octal);
 
-//decimal: 0-1-2-3-4-5-6-7-8-9 
-var decimal=123456;
-console.log(decimal);
+// //decimal: 0-1-2-3-4-5-6-7-8-9 
+// var decimal=123456;
+// console.log(decimal);
 
-//hexadecimal: 0-1-2-3-4-5-6-7-8-9-A-B-C-D-E-F
-var hexadecimal=0xff;
-console.log(hexadecimal);
+// //hexadecimal: 0-1-2-3-4-5-6-7-8-9-A-B-C-D-E-F
+// var hexadecimal=0xff;
+// console.log(hexadecimal);
 
 //Number() parseInt()=bu int çeviriyor arasındaki fark nedir?
 //string() data.toString nedir aralarındaki farlkar nedir?
 //Cast
 //database, port, api(string)
-console.log(Number("10")+10);
-console.log(parseInt("10")+10);
+// console.log(Number("10")+10);
+// console.log(parseInt("10")+10);
 
-console.log(String(30)+10);
- var number=30;
- console.log(number.toString()+10);
-
-
- //var, let, const
-
- var data1=11;
- console.log(data1);
-
- var data1=22;
- console.log(data1);
-
- let data2=33;
- console.log(data2);
-
- let data3=33;
- data3=44;
- console.log(data3);
-
-const data4=55;
-console.log(data4);
-
-const data5=66;
-data5=76;
-console.log(data5);
+// console.log(String(30)+10);
+//  var number=30;
+//  console.log(number.toString()+10);
 
 
+//  //var, let, const
 
+//  var data1=11;
+//  console.log(data1);
 
+//  var data1=22;
+//  console.log(data1);
 
+//  let data2=33;
+//  console.log(data2);
 
+//  let data3=33;
+//  data3=44;
+//  console.log(data3);
 
+// const data4=55;
+// console.log(data4);
 
+// const data5=66;
+// data5=76;
+// console.log(data5);
+///////////////////////////////
+//string
+let str=' js ÖĞreniyorum js '
+console.log(str);
+console.log(str.length);
+console.log(str.trim().length);
 
+console.log(str.toLowerCase());
+console.log(str.toUpperCase());
 
+console.log(str.charAt(1)); //1.data daki karakteri gösterir
 
+console.log(str.indexOf("js")); //soldan arama yaparken nerede buluğunu yazar
+console.log(str.lastIndexOf("js")); //sondan aramaya başlıyor
+
+console.log(str.concat("sona ekleme"));
+console.log(str.replace(str,"değiştir")); //yazıyı satırdaki ile değişiyor
+
+console.log(str.substring(2));  //2.indisten itibaren parçala bana göster
+console.log(str.substring(0,4)); // bana 2 ile 4 arasında parçala göster
 
 // console.log(Math.abs(-5.9));
 // console.log(Math.round(5.9));
