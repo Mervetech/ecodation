@@ -201,50 +201,68 @@ console.log(Math.round(Math.random()*9+1)); */
 // console.log(str.substring(0,4)); // bana 2 ile 4 arasında parçala göster
 // ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-//Function (Normal Fonksiyon)
+// //Function (Normal Fonksiyon)
 
-//1 retursuz Parametresiz
-function returnsuzParametresiz(){
-    console.log("deneme");
-}
-returnsuzParametresiz();
+// //1 retursuz Parametresiz
+// function returnsuzParametresiz(){
+//     console.log("deneme");
+// }
+// returnsuzParametresiz();
 
-//2 retursuz Parametreli
-function returnsuzParametreli(adi){//parametre:adi
-    console.log("deneme "+adi);
-}
-returnsuzParametreli("merve"); //argüman: "merve "
-
-
-//3 returlu Parametresiz
-function returnluParametresiz(){
-    return "deneme55";
-}
-let result3=returnluParametresiz();
-console.log(result3);
-
-//4 returlu Parametreli
-function returnluParametreli(soyadi){
-    return "deneme66 "+soyadi;
-}
-let result4=returnluParametreli("Turhan");
-console.log(result4);
- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//Anoymous (function)
+// //2 retursuz Parametreli
+// function returnsuzParametreli(adi){//parametre:adi
+//     console.log("deneme "+adi);
+// }
+// returnsuzParametreli("merve"); //argüman: "merve "
 
 
-//Arrow (Function)
+// //3 returlu Parametresiz
+// function returnluParametresiz(){
+//     return "deneme55";
+// }
+// let result3=returnluParametresiz();
+// console.log(result3);
+
+// //4 returlu Parametreli
+// function returnluParametreli(soyadi){
+//     return "deneme66 "+soyadi;
+// }
+// let result4=returnluParametreli("Turhan");
+// console.log(result4);
+//  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// // Normal Function
+// function normal(){}
+
+//  //Anonymous (function)
+//  let Anonymous=function(){}
+
+// //Arrow (Function)
+// let Arrow=()=>{}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//let veya const
+//arrow function
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Immedia Function()();
+//condition
+//loop
+//örnekler
 
 
+--------------------------------------------
+// let userData=prompt("Lütfen bir şeyler yazınız") ;
+// console.log(userData);
+//  console.log(userData.length);
+//  console.log(userData.trim().length);
 
+//  console.log(userData.toLowerCase());
+// console.log(userData.toUpperCase());
 
+// console.log(userData.concat("-ben js öğreniyorum"));
+// console.log(userData.replace(userData,"Muaz")); //yazıyı satırdaki ile değişiyor
 
-
-
-
-
-// console.log(Math.abs(-5.9));
-// console.log(Math.round(5.9));
-// console.log(Math.pow(6,2));
-// console.log(Math.ceil(5.9));
-// console.log(6/5);
+// console.log(userData.substring(2)); 
+// console.log(userData.startsWith());
+// console.log(userData.endsWith());
+// console.log(userData.charAt(1));
+// console.log(userData.substring(0,4)); 
+---------------------------------------------------
