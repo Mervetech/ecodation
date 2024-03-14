@@ -266,162 +266,201 @@ console.log(Math.round(Math.random()*9+1)); */
 //   })(); // main dizi yapılarında kullanıllıyor çok kullanılmıyor ama
 
 ////////////////////////////////////////////////////////////////////
-//condition
- const condi=()=>{
-    let number=4;
-    if(number>=2){
-        console.log("Büyüktür");
-    } else{
-        console.log("Küçüktür");
-    }
- }
- condi();
+// //condition
+//  const condi=()=>{
+//     let number=4;
+//     if(number>=2){
+//         console.log("Büyüktür");
+//     } else{
+//         console.log("Küçüktür");
+//     }
+//  }
+//  condi();
 
 
- const condi2=()=>{
-    let number=4;
-    if(number>=2)
-        console.log("Büyüktür");
-    else
-        console.log("Küçüktür");
+//  const condi2=()=>{
+//     let number=4;
+//     if(number>=2)
+//         console.log("Büyüktür");
+//     else
+//         console.log("Küçüktür");
     
- }
- condi2();
+//  }
+//  condi2();
 
 
- const condi3=()=>{
-    let number=4;
-    let result=(number>=2) ? "Büyüktür":"Küçüktür";
-     console.log(result);
- }
- condi3();
+//  const condi3=()=>{
+//     let number=4;
+//     let result=(number>=2) ? "Büyüktür":"Küçüktür";
+//      console.log(result);
+//  }
+//  condi3();
 
  
- const condi4=()=>{
-    let number=4;
-     console.log((number>=2) ? "Büyüktür":"Küçüktür");
- }
- condi4();
+//  const condi4=()=>{
+//     let number=4;
+//      console.log((number>=2) ? "Büyüktür":"Küçüktür");
+//  }
+//  condi4();
 
- const condi5=()=>{
-    let number=4;
-    if(number=="1"){
-        console.log("1");
-    } else if(number==2){
-        console.log("2");
-    }else if(number==3){
-        console.log("3");
- }else if(number==4){
-    console.log("4");
-}else{
-    console.log("1<X<5 Dışındadır");
-} }
- condi5();
-
-
- const condi6=()=>{
-    let number=4;
-// break : döngü kırmak
-//return :metot kırmak
-//continue :1 kereye mahsus es geç sonra döngüye devam
-switch (number) {
-    case 1:
-        console.log("1");
-        break; // döngüyü kırmak
-    case 2:
-            console.log("2");
-            break;
-    case 3:
-        console.log("3");
-        break;
-     case 4:
-        console.log("4");
-        break;
-    default:
-        console.log("1<X<5 Dışındadır");
-        break;
-}
- }
-condi6();
+//  const condi5=()=>{
+//     let number=4;
+//     if(number=="1"){
+//         console.log("1");
+//     } else if(number==2){
+//         console.log("2");
+//     }else if(number==3){
+//         console.log("3");
+//  }else if(number==4){
+//     console.log("4");
+// }else{
+//     console.log("1<X<5 Dışındadır");
+// } }
+//  condi5();
 
 
+//  const condi6=()=>{
+//     let number=4;
+// // break : döngü kırmak
+// //return :metot kırmak
+// //continue :1 kereye mahsus es geç sonra döngüye devam
+// switch (number) {
+//     case 1:
+//         console.log("1");
+//         break; // döngüyü kırmak
+//     case 2:
+//             console.log("2");
+//             break;
+//     case 3:
+//         console.log("3");
+//         break;
+//      case 4:
+//         console.log("4");
+//         break;
+//     default:
+//         console.log("1<X<5 Dışındadır");
+//         break;
+// }
+//  }
+// condi6();
 
 
 
 
-//loop
+
+
+// //loop
+// //örnekler
+
+
+
+// // let userData=prompt("Lütfen bir şeyler yazınız") ;
+// // console.log(userData);
+// //  console.log(userData.length);
+// //  console.log(userData.trim().length);
+
+// //  console.log(userData.toLowerCase());
+// // console.log(userData.toUpperCase());
+
+// // console.log(userData.concat("-ben js öğreniyorum"));
+// // console.log(userData.replace(userData,"Muaz")); //yazıyı satırdaki ile değişiyor
+
+// // console.log(userData.substring(2)); 
+// // console.log(userData.startsWith());
+// // console.log(userData.endsWith());
+// // console.log(userData.charAt(1));
+// // console.log(userData.substring(0,4)); 
+
+// //ÖDEV:
+// //Kullanıcı tarafından girilen bir sayının negatif mi, pozitif mi
+// //(dikkat: normal function ile yazınız)
+
+// // Kullanıcı tarafından girilen bir sayının tek mi, çift mi olduğunu gösteren
+// //(dikkat:anonymous function ve ternary ile yazınız)
+
+// let isOddEven = () => {
+//     const result = 4;
+//     if(result % 2==0)
+//     console.log("Çifttir"); 
+//     else
+//     console.log("Tektir")
+// }
+// isOddEven() //bölümünde kalan denilince bu akla gelsin
+
+// //kullanıcadan alınan sayıya göre haftanın günlerini switch-case ile
+// //Örneğin:kullanıcı 1 girdi: 1=pazartesi
+
+
+// //////////////////////////////////////////////////////////////////
+
+// //loop
+ 
+// // let loop=()=>{
+// for (let i = 1; i <= 10; i++) {
+//     document.write(i+ " ");
+// }   
+// }
+// // loop()
+// document.writeln("<br/>")
+
+// //let loop2=()=>{
+//     let i=1;
+//     while(i <= 10) {
+
+//             document.write(i+ " ");
+//             i++;
+//     }   
+//     }
+//    // loop2();
+//      document.writeln("<br/>")
+
+//    // let loop3=()=>{
+//         let i=1;
+//         do{
+//             document.write(i+ " ");
+//                 i++;
+//         }   
+//         while(i <= 10) ;
+//         }
+//       //  loop3();
+
 //örnekler
 
+//////////////////////////////////////////////////////////////////
 
-
-// let userData=prompt("Lütfen bir şeyler yazınız") ;
-// console.log(userData);
-//  console.log(userData.length);
-//  console.log(userData.trim().length);
-
-//  console.log(userData.toLowerCase());
-// console.log(userData.toUpperCase());
-
-// console.log(userData.concat("-ben js öğreniyorum"));
-// console.log(userData.replace(userData,"Muaz")); //yazıyı satırdaki ile değişiyor
-
-// console.log(userData.substring(2)); 
-// console.log(userData.startsWith());
-// console.log(userData.endsWith());
-// console.log(userData.charAt(1));
-// console.log(userData.substring(0,4)); 
-
-//ÖDEV:
-//Kullanıcı tarafından girilen bir sayının negatif mi, pozitif mi
-//(dikkat: normal function ile yazınız)
-
-// Kullanıcı tarafından girilen bir sayının tek mi, çift mi olduğunu gösteren
-//(dikkat:anonymous function ve ternary ile yazınız)
-
-let isOddEven=()=>{
-    const result=4;
-    if(result%2==0)
-    console.log("Çift"); 
-    else
-    console.log("Tektir")
+//try catch(Error handling ) !!!!!!ÇOK ÖNEMLİ!!
+ 
+let tryCatchTuto=()=>{
+    try{
+        alertx("pop-up");
+    }catch(error){
+        console.log("hata mesajı: "+error.message);
+        console.log("hata mesajı: "+error.name);
+        console.error(error);
+    }finally{//zorunlu kapatılması gereken satırlar için finally kullanılır
+        console.log("db.close");
+        console.log("port.close");
+    }
+    console.log("son satır");
 }
-isOddEven() //bölümünde kalan denilince bu akla gelsin
 
-//kullanıcadan alınan sayıya göre haftanın günlerini switch-case ile
-//Örneğin:kullanıcı 1 girdi: 1=pazartesi
+tryCatchTuto();
+
+//////////////////////////////////////////////////////////////////
+//debug nedir?
+// 1 ile 10 dahil olma üzere toplama işlemi yapan JS algoritmasını yazımız
+const debugData = () =>{
+    let sum=0; 
+    for(let i=1; i<=10; i++){
+       sum=sum+i;
+    }
+    console.log("Toplam: "+sum);
+}
+debugData()
+
+
 
 
 //////////////////////////////////////////////////////////////////
 
-//loop
- 
-let loop=()=>{
-for (let i = 1; i <= 10; i++) {
-    document.write(i+ " ");
-}   
-}
-loop()
-document.writeln("<br/>")
-
-let loop2=()=>{
-    let i=1;
-    while(i <= 10) {
-
-            document.write(i+ " ");
-            i++;
-    }   
-    }
-    loop2();
-     document.writeln("<br/>")
-
-    let loop3=()=>{
-        let i=1;
-        do{
-            document.write(i+ " ");
-                i++;
-        }   
-        while(i <= 10) ;
-        }
-        loop3();
-
-//örnekler
+//return break continue?
