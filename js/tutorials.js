@@ -457,6 +457,59 @@ const debugData = () =>{
     console.log("Toplam: "+sum);
 }
 debugData()
+//////////////////////////////////////////////////////////////////
+//break: döngünün çalışmasına izin verme
+//return:metotun çalışmasına izin verme
+//continue: sadece 1 seferberllik o şartta çalışma
+ //return: metotun çalışmasını durdurur
+ //break:döngünün çalışmasını durdurur
+ //continue: sadece 1 kereye mahsus durur sonra devam eder 
+ 
+ 
+//SORU 1<= userData<=50
+//1 ile kullnıcı tarafından alınan bitiş sayısıma kadar toplama yapabilir
+//Örnek: 1<=User 1+2+3+....userdatası
+//Eğer bu sayılardan 7 sayıyı varsa bunu toplayama dahil etmesin()
+//By sayının en fazla  50'e kadar toplama yapabilir(break)
+//bu sayılardan çift olanların kaç tane, sayıların kendisi ve toplamları nedir?
+//bu sayılardan tek olanların kaç tane ,sayıların kendisi ve toplamları nedir?
+//secret-Key kullanıcı eğer 44 girerse hiç bir işlem yapmadan sistemden çıkış sağlansın onunda haricinde sürekli işlem yapsın
+//Dikkat: Bu algoritmayı Arrow Function ile yapalım
+//(Clean code kuralları çerçevisinde ) algoritma yapan js program?-*******************************************************************
+
+
+let sumExamplesData = ()=>{
+  let commonSum=0;
+  let oddSum=0, oddCounter=0, oddNumber=0;
+  let evenSum=0, evenCounter=0, evenNumber=0;
+  //user data
+  let user=Number(prompt("Lütfen Bitiş sayısını yazınız"));
+  
+  for (let i = 0; i <= user; index++) {
+    if(user==44){
+        console.log("secret key number failed "+user);
+        break;
+    }
+    if(i==50){
+        console.log("en fazla 50 sayısına kadar hesaplanır "+user);
+        break;
+  }
+  if(i==7){
+    console.log("en fazla 7 sayısını toplama !!!"+user);
+    continue; //1 kereliğine toplamayacak devam edecek
+}
+
+}
+sumExamplesData()
+
+
+
+
+
+
+
+
+
 
 
 
