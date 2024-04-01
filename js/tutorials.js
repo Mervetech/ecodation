@@ -587,14 +587,15 @@ let usernameAndSurnameMasking=()=>{
 //callbackfunction
 
 const birinci=(data)=>{
-       console.log(Math.pow(2,data));
-       return user;
+      return Math.pow(2,data);
  }
 
  const ikinci=(callbackfunction)=>{
-  let user=Number(promt("Lütfen Sayı Giriniz"));
-  callbackfunction(user);
-  }
+  let user=Number(prompt("Lütfen Sayı Giriniz"));
+  let data= callbackfunction(user);
+  console.log(data);
+    }
+  ikinci(birinci)
 
 
 
