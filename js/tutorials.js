@@ -430,33 +430,33 @@ console.log(Math.round(Math.random()*9+1)); */
 
 //try catch(Error handling ) !!!!!!ÇOK ÖNEMLİ!!
  
-let tryCatchTuto=()=>{
-    try{
-        alertx("pop-up");
-    }catch(error){
-        console.log("hata mesajı: "+error.message);
-        console.log("hata mesajı: "+error.name);
-        console.error(error);
-    }finally{//zorunlu kapatılması gereken satırlar için finally kullanılır
-        console.log("db.close");
-        console.log("port.close");
-    }
-    console.log("son satır");
-}
+// let tryCatchTuto=()=>{
+//     try{
+//         alertx("pop-up");
+//     }catch(error){
+//         console.log("hata mesajı: "+error.message);
+//         console.log("hata mesajı: "+error.name);
+//         console.error(error);
+//     }finally{//zorunlu kapatılması gereken satırlar için finally kullanılır
+//         console.log("db.close");
+//         console.log("port.close");
+//     }
+//     console.log("son satır");
+// }
 
-tryCatchTuto();
+// tryCatchTuto();
 
-//////////////////////////////////////////////////////////////////
-//debug nedir?
-// 1 ile 10 dahil olma üzere toplama işlemi yapan JS algoritmasını yazımız
-const debugData = () =>{
-    let sum=0; 
-    for(let i=1; i<=10; i++){
-       sum=sum+i;
-    }
-    console.log("Toplam: "+sum);
-}
-debugData()
+// //////////////////////////////////////////////////////////////////
+// //debug nedir?
+// // 1 ile 10 dahil olma üzere toplama işlemi yapan JS algoritmasını yazımız
+// const debugData = () =>{
+//     let sum=0; 
+//     for(let i=1; i<=10; i++){
+//        sum=sum+i;
+//     }
+//     console.log("Toplam: "+sum);
+// }
+// debugData()
 //////////////////////////////////////////////////////////////////
 //break: döngünün çalışmasına izin verme
 //return:metotun çalışmasına izin verme
@@ -480,12 +480,12 @@ debugData()
 
 let sumExamplesData = ()=>{
   let commonSum=0;
-  let oddSum=0, oddCounter=0, oddNumber=0;
-  let evenSum=0, evenCounter=0, evenNumber=0;
+  let oddSum=0, oddCounter=0, oddNumber= "";
+  let evenSum=0, evenCounter=0, evenNumber= "";
   //user data
   let user=Number(prompt("Lütfen Bitiş sayısını yazınız"));
   
-  for (let i = 0; i <= user; index++) {
+  for (let i = 0; i <= user; i++) {
     if(user==44){
         console.log("secret key number failed "+user);
         break;
@@ -498,8 +498,31 @@ let sumExamplesData = ()=>{
     console.log("en fazla 7 sayısını toplama !!!"+user);
     continue; //1 kereliğine toplamayacak devam edecek
 }
-
+if(i % 2 == 0){
+    // evenSum=evenSum+i;
+    evenSum += i;
+    evenCounter++;
+    evenNumber= evenNumber+" "+i;
+} else {
+    oddSum += i;
+    oddCounter++;
+    oddNumber= oddNumber +" "+i;
 }
+  commonSum+=i;
+  } //end for
+  console.log("Toplam: "+commonSum);
+
+  console.log("Tek sayılar: "+oddNumber);
+  console.log("Tek sayı adedi: "+oddCounter);
+  console.log("Tek sayı toplam: "+oddSum);
+
+
+
+  console.log("Çift sayılar: "+evenNumber);
+  console.log("Çift sayı adedi: "+evenCounter);
+  console.log("Çift sayı toplam: "+evenSum);
+
+}// end sumExamplesData
 sumExamplesData()
 
 
