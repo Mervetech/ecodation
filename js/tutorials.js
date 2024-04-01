@@ -559,26 +559,55 @@ let usernameAndSurnameMasking=()=>{
 //////////////////////////////////////////////////////////////////
 //Monad ==> Bir fonk. nın çıktısı başka bir fonk. girdisi ise
 
-const birinci=()=>{
-  let user=Number (prompt("Lütfen bir sayı giriniz:  ") ) ;
-  return user;
-}
+// const birinci=()=>{
+//   let user=Number (prompt("Lütfen bir sayı giriniz:  ") ) ;
+//   return user;
+// }
 
-const ikinci=()=>{
-  let data=birinci();
-  console.log(Math.sqrt(data));
-}
-//ikinci();
+// const ikinci=()=>{
+//   let data=birinci();
+//   console.log(Math.sqrt(data));
+// }
+// //ikinci();
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //setTimeOut(), SetInterval();
 
-// Belirli zaman sonra tek bir kere çalışır ve durur
- setTimeout(function(){
-   console.log("setTimeOut çalıştı"); // 2 saniye sonra çalıştı 
- },2000);
+// Belirli zaman sonra tek bir kere çalışır ve durur enamamıs function
+//  setTimeout(function(){
+//    console.log("setTimeOut çalıştı"); // 2 saniye sonra çalıştı 
+//  },2000);
 
-//belirli zaman sonra çalışır ve sonsuza kadar kapanıp tekrar çalışır
- setInterval(function() {
-  console.log("SetInterval çalıştı"); // 2 saniye sonra çalıştı 
-},3000)
+// //belirli zaman sonra çalışır ve sonsuza kadar kapanıp tekrar çalışır array function
+//  setInterval(()=>{
+//   console.log("SetInterval çalıştı"); // 2 saniye sonra çalıştı 
+// },3000)
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//callbackfunction
+
+const birinci=(data)=>{
+       console.log(Math.pow(2,data));
+       return user;
+ }
+
+ const ikinci=(callbackfunction)=>{
+  let user=Number(promt("Lütfen Sayı Giriniz"));
+  callbackfunction(user);
+  }
+
+
+
+
+
+//promise
+//asyn/await
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//dizi, Iterative for, for in, for of, forEach, map, filter, fill
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//obje
+//dom
+//jquery ajax GET/POST
