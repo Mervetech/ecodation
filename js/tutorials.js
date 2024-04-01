@@ -568,4 +568,17 @@ const ikinci=()=>{
   let data=birinci();
   console.log(Math.sqrt(data));
 }
-ikinci();
+//ikinci();
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//setTimeOut(), SetInterval();
+
+// Belirli zaman sonra tek bir kere çalışır ve durur
+ setTimeout(function(){
+   console.log("setTimeOut çalıştı"); // 2 saniye sonra çalıştı 
+ },2000);
+
+//belirli zaman sonra çalışır ve sonsuza kadar kapanıp tekrar çalışır
+ setInterval(function() {
+  console.log("SetInterval çalıştı"); // 2 saniye sonra çalıştı 
+},3000)
