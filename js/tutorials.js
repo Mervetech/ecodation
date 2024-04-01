@@ -540,7 +540,7 @@ let usernameAndSurnameMasking=()=>{
   const usernameAndSurname=prompt("Lütfen adınızı ve soyadınızı giriniz: ");
   
   let username=usernameAndSurname.substring(0,usernameAndSurname.indexOf(" "));
-  for (let i = 1; i <= username.length; i++) {
+  for (let i = 1; i < username.length; i++) {
     username=username.replace(username.charAt(i),"*");
   }
   username=username.toUpperCase();
@@ -548,14 +548,24 @@ let usernameAndSurnameMasking=()=>{
 
     let surname=usernameAndSurname.substring(usernameAndSurname.indexOf(" ")+1,usernameAndSurname.length).toUpperCase();
     for (let i = 3; i <= username.length; i++) {
-      surname=surname.replace(username.charAt(i),"*");
+      surname=surname.replace(surname.charAt(i),"*");
       
   }
   console.log(surname);
   console.log(username.concat(" ").concat(surname)  );
 }
-usernameAndSurnameMasking();
-
-
+//usernameAndSurnameMasking();
 
 //////////////////////////////////////////////////////////////////
+//Monad ==> Bir fonk. nın çıktısı başka bir fonk. girdisi ise
+
+const birinci=()=>{
+  let user=Number (prompt("Lütfen bir sayı giriniz:  ") ) ;
+  return user;
+}
+
+const ikinci=()=>{
+  let data=birinci();
+  console.log(Math.sqrt(data));
+}
+ikinci();
