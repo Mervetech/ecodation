@@ -478,65 +478,84 @@ console.log(Math.round(Math.random()*9+1)); */
 //(Clean code kuralları çerçevisinde ) algoritma yapan js program?-*******************************************************************
 
 
-let sumExamplesData = ()=>{
-  let commonSum=0;
-  let oddSum=0, oddCounter=0, oddNumber= "";
-  let evenSum=0, evenCounter=0, evenNumber= "";
-  //user data
-  let user=Number(prompt("Lütfen Bitiş sayısını yazınız"));
+// let sumExamplesData = ()=>{
+//   let commonSum=0;
+//   let oddSum=0, oddCounter=0, oddNumber= "";
+//   let evenSum=0, evenCounter=0, evenNumber= "";
+//   //user data
+//   let user=Number(prompt("Lütfen Bitiş sayısını yazınız"));
   
-  for (let i = 0; i <= user; i++) {
-    if(user==44){
-        console.log("secret key number failed "+user);
-        break;
-    }
-    if(i==50){
-        console.log("en fazla 50 sayısına kadar hesaplanır "+user);
-        break;
+//   for (let i = 0; i <= user; i++) {
+//     if(user==44){
+//         console.log("secret key number failed "+user);
+//         break;
+//     }
+//     if(i==50){
+//         console.log("en fazla 50 sayısına kadar hesaplanır "+user);
+//         break;
+//   }
+//   if(i==7){
+//     console.log("en fazla 7 sayısını toplama !!!"+user);
+//     continue; //1 kereliğine toplamayacak devam edecek
+// }
+// if(i % 2 == 0){
+//     // evenSum=evenSum+i;
+//     evenSum += i;
+//     evenCounter++;
+//     evenNumber= evenNumber+" "+i;
+// } else {
+//     oddSum += i;
+//     oddCounter++;
+//     oddNumber= oddNumber +" "+i;
+// }
+//   commonSum+=i;
+//   } //end for
+//   console.log("Toplam: "+commonSum);
+
+//   console.log("Tek sayılar: "+oddNumber);
+//   console.log("Tek sayı adedi: "+oddCounter);
+//   console.log("Tek sayı toplam: "+oddSum);
+
+
+
+//   console.log("Çift sayılar: "+evenNumber);
+//   console.log("Çift sayı adedi: "+evenCounter);
+//   console.log("Çift sayı toplam: "+evenSum);
+
+// }// end sumExamplesData
+// sumExamplesData()
+//////////////////////////////////////////////////////////////////
+
+//ÖDEV
+//Kullanıcadan aldığımız isim(boşluk var)
+//Kullanıcadan aldığımız soyisim(boşluk var)
+//il karakter göstersin sonraki kelimeleri masking(maskeleme yapsın)
+//eğer kullanıcı isim ve soyisim ilk karakteri küçük girmişse büyük olsun mutlaka 
+// Hamit Mızrak
+//H**** MIZ***
+//İpucu: charAt, substring, indexOf, döngü, karar mekanizma
+
+
+let usernameAndSurnameMasking=()=>{
+  const usernameAndSurname=prompt("Lütfen adınızı ve soyadınızı giriniz: ");
+  
+  let username=usernameAndSurname.substring(0,usernameAndSurname.indexOf(" "));
+  for (let i = 1; i <= username.length; i++) {
+    username=username.replace(username.charAt(i),"*");
   }
-  if(i==7){
-    console.log("en fazla 7 sayısını toplama !!!"+user);
-    continue; //1 kereliğine toplamayacak devam edecek
+  username=username.toUpperCase();
+  console.log(username.toUpperCase());
+
+    let surname=usernameAndSurname.substring(usernameAndSurname.indexOf(" ")+1,usernameAndSurname.length).toUpperCase();
+    for (let i = 3; i <= username.length; i++) {
+      surname=surname.replace(username.charAt(i),"*");
+      
+  }
+  console.log(surname);
+  console.log(username.concat(" ").concat(surname)  );
 }
-if(i % 2 == 0){
-    // evenSum=evenSum+i;
-    evenSum += i;
-    evenCounter++;
-    evenNumber= evenNumber+" "+i;
-} else {
-    oddSum += i;
-    oddCounter++;
-    oddNumber= oddNumber +" "+i;
-}
-  commonSum+=i;
-  } //end for
-  console.log("Toplam: "+commonSum);
-
-  console.log("Tek sayılar: "+oddNumber);
-  console.log("Tek sayı adedi: "+oddCounter);
-  console.log("Tek sayı toplam: "+oddSum);
-
-
-
-  console.log("Çift sayılar: "+evenNumber);
-  console.log("Çift sayı adedi: "+evenCounter);
-  console.log("Çift sayı toplam: "+evenSum);
-
-}// end sumExamplesData
-sumExamplesData()
-
-
-
-
-
-
-
-
-
-
+usernameAndSurnameMasking();
 
 
 
 //////////////////////////////////////////////////////////////////
-
-//return break continue?
