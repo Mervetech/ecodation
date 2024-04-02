@@ -601,9 +601,8 @@ const birinci=(data)=>{
 //promise
 
 const promTutorials = () => {
-
+// catch 1 tane olmak zorunda
   let data = new Promise((resolve,reject) => {
-    
     let status =400 ;
     if (status == 200)
      resolve("çalıştı")
@@ -615,26 +614,46 @@ const promTutorials = () => {
   (err) => { console.error(err)}
 );
 }
-promTutorials();
-
-
-
-
-
-
-
-
-
-
+//promTutorials();
 
 
 
 //asyn/await
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////7  
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //dizi, Iterative for, for in, for of, forEach, map, filter, fill
+let arr = () =>{
+  const numbers =  [3, 5, 6, 1, 9, 4, 66];
+  return numbers;
+}
 
+let arrResult = () =>{
+  let data =arr();
+  console.log(data);
+  console.log(5);
+  console.log(data[data.length-1]);
 
+//Iterative For Loop
+  for(let i=0 ; i<data.length; i++) {
+     document.write(data[i]+" ");
+  }
+  
+document.write("<br/>");
+
+//for of in
+for(let temp in data) {
+  document.write(temp+" => "+data[temp]+"<br/>");
+}
+document.write("<br/>");
+// for in
+for(let temp of data){
+  document.write(temp+" ");
+}
+}
+arrResult();
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //obje
 //dom
