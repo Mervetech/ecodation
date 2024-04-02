@@ -586,8 +586,9 @@ let usernameAndSurnameMasking=()=>{
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //callbackfunction
 
+//Fonksiyonu bana geri çağır
 const birinci=(data)=>{
-      return Math.pow(2,data);
+      return Math.pow(data,2);
  }
 
  const ikinci=(callbackfunction)=>{
@@ -595,13 +596,39 @@ const birinci=(data)=>{
   let data= callbackfunction(user);
   console.log(data);
     }
-  ikinci(birinci)
-
-
-
-
-
+  //ikinci(birinci)
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
 //promise
+
+const promTutorials = () => {
+
+  let data = new Promise((resolve,reject) => {
+    
+    let status =400 ;
+    if (status == 200)
+     resolve("çalıştı")
+    else
+     reject("çalışmadı")
+} ). then (
+  () => { console.log("olumlu");}
+). catch (
+  (err) => { console.error(err)}
+);
+}
+promTutorials();
+
+
+
+
+
+
+
+
+
+
+
+
+
 //asyn/await
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
