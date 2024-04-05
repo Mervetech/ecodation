@@ -652,12 +652,20 @@ document.write("<br/>");
 for(let temp of data){
   document.write(temp+" ");
 }
-
+document.write("<br/>");
 //forEach
 //forEach(callbackfn: (value: T, index:number, array: T[]) => void, thisArg?: any): void;
+data.forEach(function(value,index,array){ //data.forEach(value,index,array)=>{
+  //document.write(value+" ");
+  //document.write(index+" =>" +value+"<br/>");
+  document.write(`${index} => ${value} <br/>`); 
+}); 
+
+// 
 
 
-data.forEach(); 
+
+
 }
 arrResult();
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
