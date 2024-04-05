@@ -648,10 +648,16 @@ for(let temp in data) {
   document.write(temp+" => "+data[temp]+"<br/>");
 }
 document.write("<br/>");
-// for in
+// for of
 for(let temp of data){
   document.write(temp+" ");
 }
+
+//forEach
+//forEach(callbackfn: (value: T, index:number, array: T[]) => void, thisArg?: any): void;
+
+
+data.forEach(); 
 }
 arrResult();
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
